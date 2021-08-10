@@ -40,8 +40,6 @@ export default function App() {
         },
     ];
     return (
-        <div className="characters">
-            < Character />
     <div className="characters">
         < Character user={characters[0]}/>
         < Character user={characters[1]}/>
@@ -49,7 +47,6 @@ export default function App() {
         < Character user={characters[3]}/>
         < Character user={characters[4]}/>
     </div>
-            </div>
   )
 }
 
