@@ -1,19 +1,16 @@
-export default function Character({user}) {
-
-    let { name, surname, age, info, photo } = user;
-    return (
+export default function Obj ({user}){
+    let {id, name, username} = user
+    return(
         <div>
             <div>
-                <h2>Name: {name}</h2>
-                <h2>Surname: {surname}</h2>
-                <h2>Age: {age}</h2>
-                <h2>{info}</h2>
-                <h2>{photo}</h2>
-                <img src={photo} alt={'img'}/>
+                <h2>Id: {id}</h2>
+                <h2>name: {name}</h2>
+                <h2>Username: {username}</h2>
+                {/*<h2>Address: {address}</h2>*/}
+
                 <hr/>
             </div>
-            </div>
-            );
+        </div>
+    )
 
-
-    }
+}
