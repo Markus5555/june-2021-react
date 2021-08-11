@@ -1,7 +1,7 @@
 import './App.css';
 import Character from "./Components/Product/Character";
 export default function App() {
-  //let title = 'hello okten'
+    //let title = 'hello okten'
     let characters = [
         {
             name: 'Bart',
@@ -41,16 +41,12 @@ export default function App() {
     ];
     return (
         <div className="characters">
-            < Character />
-    <div className="characters">
-        < Character user={characters[0]}/>
-        < Character user={characters[1]}/>
-        < Character user={characters[2]}/>
-        < Character user={characters[3]}/>
-        < Character user={characters[4]}/>
-    </div>
+                < Character user={characters[0]}/>
+                < Character user={characters[1]}/>
+                < Character user={characters[2]}/>
+                < Character user={characters[3]}/>
+                < Character user={characters[4]}/>
             </div>
-  )
+
+    )
 }
-
-
