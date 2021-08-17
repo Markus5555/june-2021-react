@@ -15,7 +15,7 @@ const getPostsOfUser = (id) => {
     return axiosInstance.get('/'+ id + '/posts')
 };
 const getCommentsOfUser = (id) => {
-    return axiosInstance.get('/'+ id + '/posts/' + id + '/comments')
+    return axiosInstance.get('/posts/' + id + '/comments')
 };
 
 export {getUsers, getUser, getPostsOfUser, getCommentsOfUser};
