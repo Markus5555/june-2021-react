@@ -7,15 +7,14 @@ import User from "../user/User";
 export default function Users() {
 
     let [users, setUsers] = useState([])
-    let [user, setUser] = useState(null)
+    let [posts, setPosts] = useState(null)
     useEffect(() => {
 
         getUsers().then(value => setUsers([...value]))
     }, [])
 
     const choseUser = (u) => {
-        setUser({...u})
-        getPostsOfUser(u.id).then(value => console.log(value))
+        getPostsOfUser(u.id).then(value => setPosts(value))
     }
 
     return (
@@ -28,9 +27,9 @@ export default function Users() {
                     />)
                 }
             </div>
-            {user &&
-            <div className={'chosen-one'}>
-                {JSON.stringify(user)}
+            {posts &&
+            <div className={'chosen-one'}>   // TODO створи окрему компоненту не репрезентуй через JSON.stringify
+                {JSON.stringify(posts)}
             </div>
             }
         </div>
