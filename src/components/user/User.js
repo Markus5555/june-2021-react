@@ -6,7 +6,7 @@ export default function User({item, choseUser}) {
   return (
     <div>
       {item.id} - {item.name}
-      <button onClick= {onClickUserChose}>Posts</button>
+      <button onClick= {onClickUserChose}>Details</button>
     </div>
   );
 }
