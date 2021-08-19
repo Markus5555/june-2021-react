@@ -15,7 +15,7 @@ const createCar = (obj) =>{
            'Content-type': 'application/json; charset=UTF-8',
        },
     })
-       .then(value => value.json())
+
 
 }
 

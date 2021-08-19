@@ -19,6 +19,7 @@ const [cars, setCars] = useState([])
         createCar(formState).then(value => setCars([...cars, value]))
 
     }
+
     return (
         <div>
             <form onSubmit={onFormSubmit}>
@@ -30,7 +31,7 @@ const [cars, setCars] = useState([])
             <hr/>
             <div>
                 {
-                    cars.map(item => <Car iteem={item} key={item.id}/> )
+                    cars.map(item => <Car iteem={item} key={item.id} /> )
                 }
             </div>
         </div>
